@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->
+<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->
+<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->
+<!--[if IE 9 ]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>
+      Pair Program With Me - Matcher
+    </title>
+
+    <!-- TODO: change all assets to be relative -->
+    <!-- TODO: maybe use slim - same as parent rails app? -->
+    <link href="http://www.pairprogramwith.me/assets/application-6c2c588af5c2ceda76ffeff69252bf58.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://www.pairprogramwith.me/assets/vendor/custom.modernizr-5c8db04796b258cc87b05ceddc790040.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <p class="showcase">
+          <a href="http://www.pairprogramwith.me/">
+            <img src="http://www.pairprogramwith.me/badge.png" />
+          </a>
+        </p>
+        <h1>
+          <a href="/" style="color: #FFFFFF">
+            Matcher
+          </a>
+        </h1>
+      </div>
+    </header>
+    <section id="badge">
+      <div class="content">
+        <div class="main-content">
+          <%= yield %>
+
+          <% (1..4).each do %>
+            <p>
+              &nbsp;
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </section>
+
+    <section id="copyright">
+      <div class="content">
+        <p>
+          Design by <a href="http://chri.so/">Chris Radford</a>.
+          Awesome badge by <a href="http://twoguys.us/">David Browning</a>.
+          <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US" id="licence" rel="license">
+            <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png"/>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <script src="http://www.pairprogramwith.me/assets/application-5f9939dfdea386c21f9b5b200c64ed7b.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -15,7 +15,7 @@ So that hackers will be happier<br/>
     Find your pair!
     Go to: pairprogramwith.me/match
     Enter: ABC123
-    
+
 *And* every card has one identical twin<br/>
 *When* Jane, the first recipient, follows the directions on her card<br/>
 *And* she logs in with Github<br/>
@@ -23,12 +23,12 @@ So that hackers will be happier<br/>
 *Then* she is told:
 
     Your pair hasn't signed in yet. Keep your fingers crossed!"
-    
+
 *When* the second recipient, Bob, follows the directions on his card<br/>
 *Then* he is told:
 
     You've been matched with Jane! Click here to email her!
-    
+
 ## FAQ
 
 *Why match based on fixed codes? Why not just randomly match people as they arrive?*
@@ -49,7 +49,6 @@ Because:
 * require an email address if not submitted
 * make a get '/code' route behave nicely, or otherwise improve UX
   * e.g. Right now, you can only check if your pair has signed in by submitting your code via post
-* move view code out of the app.rb
 * anything else you can think of:
   * security
   * gravatars for fun

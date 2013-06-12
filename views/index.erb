@@ -1,0 +1,16 @@
+<h1>
+  Hello there, <%= @login %>!
+</h1>
+<%= @message %>
+
+<form action='/code' method='POST'>
+  <p>
+    Enter your code:
+    <input type='text' name='code' value=''>
+  </p>
+  <p>
+    Email:
+    <input type='text' name='email' value='<%= @email %>'>
+  </p>
+  <input type='submit'>
+</form>
