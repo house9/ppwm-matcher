@@ -1,12 +1,19 @@
 <h1>
   Hello there, <%= @login %>!
 </h1>
-<%= @message %>
+<% if @messages %>
+  <div class="alert-box">
+    <h4>There were issues with your submission:</h4>
+    <% @messages.each do |message| %>
+      <div class=""> - <%= message %></div>
+    <% end %>
+  </div>
+<% end %>
 
 <form action='/code' method='POST'>
   <p>
     Enter your code:
-    <input type='text' name='code' value=''>
+    <input type='text' name='code' value='<%= @code %>'>
   </p>
   <p>
     Email:

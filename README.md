@@ -46,7 +46,6 @@ Because:
 * add a mailto: link to user emails
 * fix deprecation warnings from github auth
 * don't let codes be re-used by other users
-* require an email address if not submitted
 * make a get '/code' route behave nicely, or otherwise improve UX
   * e.g. Right now, you can only check if your pair has signed in by submitting your code via post
 * anything else you can think of:

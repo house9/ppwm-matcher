@@ -4,6 +4,7 @@ module PpwmMatcher
 
     attr_accessible :email, :code_id
     belongs_to :code
+    validates :email, presence: true
 
     def has_pair?
       !!pair
