@@ -8,7 +8,7 @@ module PpwmMatcher
       email = args.fetch(:email)
       submitted_code = args.fetch(:code)
 
-      @user = user_klass.where(:email => email).first_or_create
+      @user = user_klass.find_or_create(email, github_user)
       @code = code_klass.where(:value => submitted_code).limit(1).first
     end
 

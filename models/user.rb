@@ -15,5 +15,20 @@ module PpwmMatcher
 
       User.where(:code_id => self.code_id).detect{|u| u != self }
     end
+
+    def self.current(github_user)
+      where(:github_login => github_user.login).limit(1).first
+    end
+
+    def self.find_or_create(email, github_user)
+      user = where(:email => email).limit(1).first
+      unless user
+        user = User.new(email: email)
+        user.gravatar_id = github_user.gravatar_id
+        user.github_login = github_user.login
+        user.save
+      end
+      user
+    end
   end
 end
